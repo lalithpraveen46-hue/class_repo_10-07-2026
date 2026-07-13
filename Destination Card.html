@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Destination Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border:2px solid #ddd;
+    border-radius:15px;
+    margin:20px;
+    padding:15px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+.card::before{
+    content:"Popular";
+    position:absolute;
+    top:15px;
+    left:-35px;
+    background:crimson;
+    color:white;
+    padding:5px 40px;
+    transform:rotate(-45deg);
+    font-size:12px;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    border-radius:10px;
+}
+
+.card h2{
+    margin-top:15px;
+    color:#333;
+}
+
+.card p{
+    margin:10px 0;
+    color:#666;
+    line-height:1.5;
+}
+
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Maldives">
+    <h2>Maldives</h2>
+    <p>Enjoy crystal-clear water, luxury resorts, and beautiful beaches.</p>
+    <button>Visit</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800" alt="Bali">
+    <h2>Bali</h2>
+    <p>Relax on tropical beaches, visit temples, and enjoy lush green rice fields.</p>
+    <button>Visit</button>
+</div>
+
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" alt="Dubai">
+    <h2>Dubai</h2>
+    <p>Experience modern architecture, desert safaris, and luxury shopping.</p>
+    <button>Visit</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800" alt="Japan">
+    <h2>Japan</h2>
+    <p>Visit cherry blossoms, ancient temples, and vibrant modern cities.</p>
+    <button>Visit</button>
+</div>
+
+
+</body>
+</html>
